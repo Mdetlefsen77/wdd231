@@ -43,6 +43,9 @@ h1 {
   align-self: center;
   text-shadow: 1px 1px 2px var(--secondary-color);
 }
+main {
+  padding: 10px 50px;
+}
 
 .profile.open {
   display: none;
