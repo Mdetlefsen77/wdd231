@@ -1,77 +1,76 @@
 @media screen and (min-width: 520px) {
+  * {
+    margin: 0 auto;
+  }
 
-    * {
-        margin: 0 auto;
-    }
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 
-	header {
-		display: flex;
-        flex-direction: column;
-        padding: 0;
-	}
+  .profile.open {
+    display: block;
+  }
 
-	.profile.open {
-		display: block;
-	}
+  /* Navigation */
 
-    /* Navigation */
+  #menu {
+    display: none;
+  }
 
-	#menu {
-		display: none;
-	}
+  .navigation {
+    flex-direction: row;
+  }
 
-	.navigation {
-		flex-direction: row;
-	}
+  .navigation a {
+    display: block;
+  }
 
-	.navigation a {
-		display: block;
-	}
+  /* Main */
 
-    /* Main */
+  main {
+    margin: 1rem auto;
+  }
 
-	main {
-		margin: 1rem auto;
-	}
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 20rem;
+  }
 
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 20rem;
-    }
+  .container > section {
+    margin: 1rem 0.5rem;
+    text-align: center;
+    /* border-color: var(--secondary-color); */
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem 1px var(--secondary-color);
+  }
 
-    .container > section {
-        margin: 1rem 0.5rem;
-        text-align: center;
-        /* border-color: var(--secondary-color); */
-        border-radius: 0.5rem;
-        box-shadow: 0 0 0.5rem 1px var(--secondary-color);
-    }
-    
-    .container section:last-child {
-        grid-column: 1 / 3;
-    }
+  .container section:last-child {
+    grid-column: 1 / 3;
+  }
 
-    #filters li, .explanation li {
-        display: block;
-        min-width: 8rem;
-        max-width: 10rem;
-    }
+  #filters li,
+  .explanation li {
+    display: block;
+    min-width: 8rem;
+    max-width: 10rem;
+  }
 
-    #subjects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 0.5rem;
-    }
+  #subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+  }
 
-    #subjects li {
-        display: block;
-        flex: none;
-        width: 300px;
-        justify-self: center;
-    }
+  #subjects li {
+    display: block;
+    flex: none;
+    width: 300px;
+    justify-self: center;
+  }
 
-    .subjects > div {
-        width: 500px;
-    }
-
+  .subjects > div {
+    width: 500px;
+  }
 }

@@ -2,14 +2,12 @@ const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 const profile = document.querySelector(".profile");
 
-// Toggle navigation visibility
 hamButton.addEventListener("click", () => {
   [navigation, hamButton, profile].forEach((element) =>
     element.classList.toggle("open")
   );
 });
 
-// Display current year and last modified date
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = new Date(
   document.lastModified
@@ -94,7 +92,6 @@ function createNameTags(courses) {
     .join("");
 }
 
-// Calculate total credits
 function getCreditsRequired(coursesArray) {
   const totalCredits = coursesArray.reduce(
     (sum, course) => sum + course.credits,
@@ -103,7 +100,6 @@ function getCreditsRequired(coursesArray) {
   document.querySelector("#credits").textContent = totalCredits;
 }
 
-// Initialize course display and credit calculation
 function initializeDisplay(coursesToDisplay) {
   createNameTags(coursesToDisplay);
   getCreditsRequired(coursesToDisplay);
@@ -111,7 +107,6 @@ function initializeDisplay(coursesToDisplay) {
 
 initializeDisplay(courses);
 
-// Filter event handlers
 const filters = {
   all: () => initializeDisplay(courses),
   cse: () =>

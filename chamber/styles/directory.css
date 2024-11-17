@@ -1,0 +1,59 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #005f99;
+  --accent-color: #ffcc00;
+  --background-color: #f5f5f5;
+  --text-color: #333333;
+  --text-light-color: #ffffff;
+  --font-family: "Roboto", sans-serif;
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --font-size-small: 14px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --image-width: 75px;
+  --image-height: 75px;
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-light-color);
+  padding: var(--spacing-large);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--spacing-medium);
+  text-align: center;
+}
+
+footer section {
+  padding: var(--spacing-medium);
+}
+
+footer .social-media a img {
+  width: 50px;
+  height: 50px;
+  transition: var(--transition);
+  margin: 0 30px;
+  cursor: pointer;
+  color: var(--background-color);
+}
+
+footer .social-media a img:hover {
+  transform: scale(1.1);
+}
