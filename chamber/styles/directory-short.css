@@ -1,0 +1,217 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #005f99;
+  --accent-color: #ffcc00;
+  --background-color: #f5f5f5;
+  --text-color: #333333;
+  --text-light-color: #ffffff;
+  --font-family: "Roboto", sans-serif;
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --font-size-small: 14px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --image-width: 75px;
+  --image-height: 75px;
+  --transition: all 0.3s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.header_left {
+  align-items: center;
+  align-content: center;
+  padding-left: 1rem;
+  color: white;
+}
+
+.header_left h1 {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  position: absolute;
+  top: 2px;
+  left: 92px;
+}
+
+header img {
+  width: 80px;
+  margin-left: 0.5rem;
+}
+
+.header_left p {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+}
+
+.header_right {
+  align-items: center;
+  align-content: end;
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  list-style: none;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--text-light-color);
+}
+
+.navigation a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--text-light-color);
+}
+
+#menu {
+  font-size: 2.5rem;
+  border: 0;
+  background: none;
+  color: var(--primary-color);
+  position: absolute;
+  right: 8px;
+  top: 18px;
+  padding: 0 0 30px 0;
+  text-decoration: none;
+}
+
+#menu::before {
+  content: "☰";
+  color: var(--background-color);
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+nav.open a {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.grid section {
+  background-color: var(--secondary-color);
+  text-align: center;
+  min-height: 350px;
+}
+
+.grid h2,
+.list h2 {
+  color: white;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+section p,
+section a {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+section a {
+  color: var(--text-light-color);
+  text-decoration: underline;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-large);
+  transition: var(--transition);
+}
+
+.list section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  box-shadow: 3px 3px 10px var(--secondary-color);
+}
+
+.list img {
+  display: none;
+  
+}
+.menu img {
+  transition: var(--transition);
+}
+.menu img:hover {
+  transform: scale(1.1);
+}
+
+.list section:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+.list h2,
+.list p,
+.list a {
+  display: inline;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.list h2 {
+  background-color: transparent;
+  color: #1e1a1a;
+}
+
+.list a {
+  color: var(--backgroundColor);
+  text-decoration: underline;
+}

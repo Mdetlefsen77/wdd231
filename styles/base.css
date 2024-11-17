@@ -34,6 +34,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 20px;
+  align-items: end;
   border: 1px solid var(--secondary-color);
 }
 
@@ -64,12 +65,15 @@ main {
 }
 
 #menu {
-  font-size: 1.5rem;
-  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
   background: none;
+  cursor: pointer;
   position: absolute;
   top: 1rem;
   right: 1rem;
+  padding: 0.25rem 2vw;
 }
 
 #menu::before {
@@ -85,6 +89,13 @@ main {
   display: flex;
   flex-direction: column;
   color: var(--primary-color);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.9s ease-out;
+}
+
+.navigation.open {
+  max-height: 500px;
 }
 
 .navigation a {
@@ -93,8 +104,7 @@ main {
   text-align: center;
   text-decoration: none;
   color: var(--primary-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
- 
+  transition: 0.3s ease, color 0.3s ease;
 }
 
 .navigation a:hover {

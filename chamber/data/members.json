@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Almacén y Velas",
+    "address": "Calle Central 123, Córdoba, Argentina",
+    "phone": "+54-351-555-1234",
+    "website": "https://www.almacenyvelas.com",
+    "icon": "almacen-velas.webp",
+    "membershipLevel": 1,
+    "description": "Tienda especializada en productos de almacén y velas artesanales.",
+    "foundedYear": 2018
+  },
+  {
+    "name": "Carrefour",
+    "address": "Av. Libertad 456, Buenos Aires, Argentina",
+    "phone": "+54-11-555-5678",
+    "website": "https://www.carrefour.com.ar",
+    "icon": "carrefour.webp",
+    "membershipLevel": 2,
+    "description": "Supermercado Carrefour autoservicio con gran variedad de productos.",
+    "foundedYear": 1959
+  },
+  {
+    "name": "Dinosaurio Mall",
+    "address": "Boulevard de los Dinosaurios 789, Córdoba, Argentina",
+    "phone": "+54-351-555-7890",
+    "website": "https://www.dinosauriomall.com",
+    "icon": "dinomall.webp",
+    "membershipLevel": 3,
+    "description": "Centro comercial con tiendas, cine, y zona de entretenimiento.",
+    "foundedYear": 1997
+  },
+  {
+    "name": "+ Visión",
+    "address": "Calle de la Salud 101, Mendoza, Argentina",
+    "phone": "+54-261-555-1010",
+    "website": "https://www.masvision.com.ar",
+    "icon": "vision.webp",
+    "membershipLevel": 2,
+    "description": "Óptica especializada en lentes y cristales con servicio de oftalmología.",
+    "foundedYear": 2005
+  },
+  {
+    "name": "3D Tisk",
+    "address": "Av. Tecnología 202, Rosario, Argentina",
+    "phone": "+54-341-555-2020",
+    "website": "https://www.3dtisk.com",
+    "icon": "3dtisk.webp",
+    "membershipLevel": 1,
+    "description": "Tienda de lentes personalizados y tecnología 3D.",
+    "foundedYear": 2012
+  },
+  {
+    "name": "Arredo",
+    "address": "Calle del Estilo 303, Mar del Plata, Argentina",
+    "phone": "+54-223-555-3030",
+    "website": "https://www.arredo.com.ar",
+    "icon": "arredo.webp",
+    "membershipLevel": 2,
+    "description": "Tienda de ropa y artículos de diseño para el hogar.",
+    "foundedYear": 1991
+  },
+  {
+    "name": "Amazona",
+    "address": "Calle del Comercio 404, Salta, Argentina",
+    "phone": "+54-387-555-4040",
+    "website": "https://www.amazona.com.ar",
+    "icon": "amazona.webp",
+    "membershipLevel": 3,
+    "description": "Marketplace líder en comercio electrónico con alcance nacional.",
+    "foundedYear": 2010
+  }
+]
