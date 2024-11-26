@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   header {
     display: grid;
     grid-template-columns: 0.1fr 1fr 1fr;
@@ -41,10 +41,9 @@
     width: 100%;
     padding: 1.5rem;
   }
- main {
-
-  margin: 50px 200px 50px 200px;
- }
+  main {
+    margin: 50px 200px 50px 200px;
+  }
   .navigation a.active {
     border-bottom: 10px solid white;
   }
@@ -65,5 +64,47 @@
 
   #cards {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  footer {
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    padding: var(--spacing-large);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--spacing-medium);
+    text-align: center;
+  }
+
+  footer section {
+    padding: var(--spacing-medium);
+  }
+
+  footer .social-media a img {
+    width: 50px;
+    height: 50px;
+    transition: var(--transition);
+    margin: 0 30px;
+    cursor: pointer;
+    color: var(--background-color);
+  }
+
+  footer .social-media a img:hover {
+    transform: scale(1.1);
+  }
+
+  .events-weather {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    min-height: 12rem;
+  }
+
+  #business-sum {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #business-sum section {
+    margin: 10px;
   }
 }

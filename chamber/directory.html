@@ -11,6 +11,19 @@
       Córdoba Chamber of Commerce - Business Development & Networking in
       Argentina
     </title>
+    <meta
+      property="og:title"
+      content="WDD 231 Course Home Page - Student Martin Detlefsen"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://mdetlefsen77.github.io/wdd231/chamber/images/icon.png"
+    />
+    <meta
+      property="og:url"
+      content="https://mdetlefsen77.github.io/wdd231/chamber/home.html"
+    />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Martin Detlefsen" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,31 +34,37 @@
     />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/directory.css" />
-    <link rel="stylesheet" href="./styles/directory-short.css" />
-    <link rel="stylesheet" href="./styles/directory-large.css" />
+    <link rel="stylesheet" href="./styles/chamber-short.css" />
+    <link rel="stylesheet" href="./styles/chamber-large.css" />
     <link rel="icon" href="./favicon.ico" />
-    <script src="scripts/directory.js" defer></script>
+    <script src="./scripts/members-utils.js" type="module" defer></script>
+    <script src="./scripts/members-card.js" type="module" defer></script>
     <script src="scripts/footerDetails.js" defer></script>
     <script src="scripts/hamButton.js" defer></script>
+    <script src="scripts/activePage.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <img src="images/icon.png" alt="Cordoba Chamber of Commerce" width="120" loading="lazy">
+        <img
+          src="images/icon.png"
+          alt="Cordoba Chamber of Commerce"
+          width="120"
+          loading="lazy"
+        />
         <div class="header_left">
-            <h1>Cordoba</h1>
-            <p>Chamber of Commerce</p>
+          <h1>Cordoba</h1>
+          <p>Chamber of Commerce</p>
         </div>
         <div class="header_right">
-            <a id="menu" href="#"></a>
-            <nav class="navigation">
-                <a href="home.html">Home</a>
-              <a href="directory.html" class="active">Directory</a>
-              <a href="join.html">Join</a>
-              <a href="discover.html">Discover</a>
-            </nav>
-         </div>
+          <a id="menu" href="#"></a>
+          <nav class="navigation">
+            <a href="home.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+          </nav>
+        </div>
       </header>
 
       <main class="main-container">
