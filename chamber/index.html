@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,8 @@
       Córdoba Chamber of Commerce - Business Development & Networking in
       Argentina
     </title>
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Martin Detlefsen" />
     <meta
       property="og:title"
       content="WDD 231 Course Home Page - Student Martin Detlefsen"
@@ -20,12 +22,7 @@
       property="og:image"
       content="https://mdetlefsen77.github.io/wdd231/chamber/images/icon.png"
     />
-    <meta
-      property="og:url"
-      content="https://mdetlefsen77.github.io/wdd231/chamber/home.html"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Martin Detlefsen" />
+    <meta property="og:url" content="https://mdetlefsen77.github.io/wdd231/chamber/home.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,11 +35,13 @@
     <link rel="stylesheet" href="./styles/chamber-large.css" />
     <link rel="icon" href="./favicon.ico" />
     <script src="./scripts/members-utils.js" type="module" defer></script>
-    <script src="./scripts/members-card.js" type="module" defer></script>
+    <script src="./scripts/members-sum.js" type="module" defer></script>
     <script src="scripts/footerDetails.js" defer></script>
     <script src="scripts/hamButton.js" defer></script>
     <script src="scripts/activePage.js" defer></script>
+    <script src="scripts/weatherApi.js" defer></script>
   </head>
+
   <body>
     <div class="container">
       <header>
@@ -66,19 +65,53 @@
           </nav>
         </div>
       </header>
-
-      <main class="main-container">
-        <div class="menu">
-          <button id="grid">
-            <img src="images/grid_Icon.webp" alt="Grid View" width="70" />
-          </button>
-          <button id="list">
-            <img src="images/list_Icon.webp" alt="List View" width="70" />
-          </button>
+      <main main class="main-container">
+        <div class="hero">
+          <picture>
+            <source
+              media="(min-width: 1000px)"
+              srcset="images/hero-large.webp"
+            />
+            <source
+              media="(min-width: 640px)"
+              srcset="images/hero-medium.webp"
+            />
+            <img
+              src="images/hero-small.webp"
+              alt="Waves crashing on the shore"
+              width="400"
+              height="300"
+            />
+          </picture>
+          <a href="join.html">Join Us</a>
         </div>
-        <div id="cards" class="grid"></div>
-      </main>
 
+        <h2 class="home-title">Home</h2>
+
+        <div class="events-weather">
+          <div>
+            <h3>Events</h3>
+            <div>
+              <p>There's no events planned yet. Please, come back later</p>
+            </div>
+          </div>
+
+          <div>
+            <h3>Current Weather</h3>
+            <div id="current-weather">
+              <p>No data available</p>
+            </div>
+          </div>
+
+          <div>
+            <h3>Weather Cast</h3>
+            <div id="weather-cast">
+              <p>No data available</p>
+            </div>
+          </div>
+        </div>
+        <div id="business-sum"></div>
+      </main>
       <footer>
         <section class="address-info">
           <p><b>Cordoba Chamber of Commerce</b></p>
@@ -89,29 +122,29 @@
         </section>
         <section class="social-media">
           <a href="https://youtube.com"
-            ><img
-              src="./images/youtube.svg"
-              loading="lazy"
-              alt="Youtube Icon"
-              width="50px"
-              height="50px"
-          /></a>
-          <a href="https://twitter.com"
-            ><img
-              src="./images/twitter.svg"
-              loading="lazy"
-              alt="Twitter Icon"
-              width="50px"
-              height="50px"
-          /></a>
-          <a href="https://linkedin.com"
-            ><img
-              src="./images/linkedin.svg"
-              loading="lazy"
-              alt="LinkedIn Icon"
-              width="50px"
-              height="50px"
-          /></a>
+          ><img
+            src="./images/youtube.svg"
+            loading="lazy"
+            alt="Youtube Icon"
+            width="50px"
+            height="50px"
+        /></a>
+        <a href="https://twitter.com"
+          ><img
+            src="./images/twitter.svg"
+            loading="lazy"
+            alt="Twitter Icon"
+            width="50px"
+            height="50px"
+        /></a>
+        <a href="https://linkedin.com"
+          ><img
+            src="./images/linkedin.svg"
+            loading="lazy"
+            alt="LinkedIn Icon"
+            width="50px"
+            height="50px"
+        /></a>
         </section>
         <section class="student-info">
           <p>WDD231 Class Project</p>
