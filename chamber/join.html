@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,8 @@
       Córdoba Chamber of Commerce - Business Development & Networking in
       Argentina
     </title>
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Martin Detlefsen" />
     <meta
       property="og:title"
       content="WDD 231 Course Home Page - Student Martin Detlefsen"
@@ -24,8 +26,6 @@
       property="og:url"
       content="https://mdetlefsen77.github.io/wdd231/chamber/home.html"
     />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Martin Detlefsen" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,10 +38,11 @@
     <link rel="stylesheet" href="./styles/chamber-large.css" />
     <link rel="icon" href="./favicon.ico" />
     <script src="./scripts/members-utils.js" type="module" defer></script>
-    <script src="./scripts/members-card.js" type="module" defer></script>
+    <script src="./scripts/members-sum.js" type="module" defer></script>
     <script src="scripts/footerDetails.js" defer></script>
     <script src="scripts/hamButton.js" defer></script>
     <script src="scripts/activePage.js" defer></script>
+    <script src="scripts/weatherApi.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -66,19 +67,7 @@
           </nav>
         </div>
       </header>
-
-      <main class="main-container">
-        <div class="menu">
-          <button id="grid">
-            <img src="images/grid_Icon.webp" alt="Grid View" width="70" />
-          </button>
-          <button id="list">
-            <img src="images/list_Icon.webp" alt="List View" width="70" />
-          </button>
-        </div>
-        <div id="cards" class="grid"></div>
-      </main>
-
+      <main></main>
       <footer>
         <section class="address-info">
           <p><b>Cordoba Chamber of Commerce</b></p>

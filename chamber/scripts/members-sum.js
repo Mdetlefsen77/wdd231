@@ -5,7 +5,9 @@ const display = document.querySelector("#business-sum");
 
 async function displayMembers() {
   const members = await getMembersData(URL);
-  const filteredMembers = members.filter((member) => member.membershipLevel > 1);
+  const filteredMembers = members.filter(
+    (member) => member.membershipLevel > 1
+  );
   display.innerHTML = "";
 
   for (let i = 0; i < 3 && filteredMembers.length > 0; i++) {

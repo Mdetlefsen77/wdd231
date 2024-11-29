@@ -1,4 +1,3 @@
-// Fetch data from JSON file
 
 export function createCardTemplate(member) {
   const card = document.createElement("section");
@@ -9,7 +8,6 @@ export function createCardTemplate(member) {
   const website = document.createElement("a");
   const ul = document.createElement("ul");
 
-  // Configuración del contenido
   companyName.textContent = member.name || "No Name Provided";
   portrait.src = `images/${member.icon || "default.png"}`;
   portrait.alt = `${member.name || "Unknown"} logo`;
@@ -17,11 +15,10 @@ export function createCardTemplate(member) {
   portrait.setAttribute("width", "150");
   portrait.setAttribute("height", "150");
   address.textContent = member.address || "No address provided";
-  phoneNumbers.textContent = member.phoneNumbers || "No phone numbers";
+  phoneNumbers.textContent = member.phone || "No phone numbers";
   website.href = member.website || "#";
   website.textContent = "Website";
 
-  // Membership level
   const membershipLevel = document.createElement("li");
   const membership = {
     2: "Silver",
@@ -31,7 +28,6 @@ export function createCardTemplate(member) {
   membershipLevel.setAttribute("class", "membership");
   ul.appendChild(membershipLevel);
 
-  // Ensamblar la tarjeta
   card.appendChild(companyName);
   card.appendChild(portrait);
   card.appendChild(address);
@@ -39,18 +35,7 @@ export function createCardTemplate(member) {
   card.appendChild(website);
   card.appendChild(ul);
 
-  return card; // Devuelve el nodo creado
-}
-
-export function getMembershipName(level) {
-  switch (level) {
-    case 2:
-      return "Silver";
-    case 3:
-      return "Gold";
-    default:
-      return "Member";
-  }
+  return card; 
 }
 
 export async function getMembersData(URL) {

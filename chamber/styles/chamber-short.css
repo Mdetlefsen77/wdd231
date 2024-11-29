@@ -180,6 +180,7 @@ a {
   min-height: 350px;
   padding: 20px;
   margin: 20px;
+  border-radius: 1rem;
 }
 
 .grid h2,
@@ -315,6 +316,7 @@ section a {
   background-color: #eaeaea;
   text-align: center;
   padding-bottom: 1rem;
+  border-radius: 1rem;
 }
 
 #business-sum h3 {
