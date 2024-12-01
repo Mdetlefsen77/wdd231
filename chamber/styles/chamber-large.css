@@ -139,7 +139,7 @@
   }
   
   .join-form {
-    background: var();
+    background: var(--text-light-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 1px 4px var(--primary-color);
