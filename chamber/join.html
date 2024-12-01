@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -17,7 +17,7 @@
       property="og:title"
       content="WDD 231 Course Home Page - Student Martin Detlefsen"
     />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta
       property="og:image"
       content="https://mdetlefsen77.github.io/wdd231/chamber/images/icon.png"
@@ -37,12 +37,13 @@
     <link rel="stylesheet" href="./styles/chamber-short.css" />
     <link rel="stylesheet" href="./styles/chamber-large.css" />
     <link rel="icon" href="./favicon.ico" />
-    <script src="./scripts/members-utils.js" type="module"></script>
-    <script src="./scripts/members-sum.js" type="module"></script>
+    <script src="scripts/members-utils.js" type="module"></script>
+    <script src="scripts/formData.js" type="module"></script>
+    <script src="scripts/members-levels.js" type="module"></script>
     <script src="scripts/footerDetails.js" defer></script>
     <script src="scripts/hamButton.js" defer></script>
     <script src="scripts/activePage.js" defer></script>
-    <script src="scripts/weatherApi.js" defer></script>
+    
   </head>
   <body>
     <div class="container">
@@ -67,7 +68,114 @@
           </nav>
         </div>
       </header>
-      <main></main>
+      <main class="join-page">
+        <!-- Membership Form -->
+        <section class="join-form">
+          <h2 class="form-title">Join Us!</h2>
+          <h3>Membership Application Form</h3>
+          <form method="GET" action="thankyou.html">
+            <!-- First Name -->
+            <fieldset>
+              <legend>First Name <strong>*</strong></legend>
+              <input
+                type="text"
+                id="first"
+                name="first"
+                required
+                autocomplete="given-name"
+              />
+            </fieldset>
+
+            <!-- Last Name -->
+            <fieldset>
+              <legend>Last Name <strong>*</strong></legend>
+              <input
+                type="text"
+                id="last"
+                name="last"
+                required
+                autocomplete="family-name"
+              />
+            </fieldset>
+
+            <!-- Organizational Title -->
+            <fieldset>
+              <legend>Organizational Title</legend>
+              <input
+                type="text"
+                id="organizationtitle"
+                name="organizationtitle"
+                autocomplete="organization"
+                pattern="^[A-Za-z\s\-]{7,}$"
+                title="Only letters, hyphens, and spaces are allowed. Minimum 7 characters."
+              />
+            </fieldset>
+
+            <!-- Email -->
+            <fieldset>
+              <legend>Email Address <strong>*</strong></legend>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="someone@example.com"
+                autocomplete="email"
+              />
+            </fieldset>
+
+            <!-- Cell Phone -->
+            <fieldset>
+              <legend>Cell Phone <strong>*</strong></legend>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                pattern="^\d{3}-\d{3}-\d{4}$"
+                placeholder="000-000-0000"
+              />
+            </fieldset>
+
+            <!-- Membership Level -->
+            <fieldset>
+              <legend>Membership Level <strong>*</strong></legend>
+              <label
+                ><input type="radio" name="level" value="non-profit" /> Non
+                Profit Membership</label
+              >
+              <label
+                ><input type="radio" name="level" value="bronze" checked />
+                Bronze Membership</label
+              >
+              <label
+                ><input type="radio" name="level" value="silver" /> Silver
+                Membership</label
+              >
+              <label
+                ><input type="radio" name="level" value="gold" /> Gold
+                Membership</label
+              >
+            </fieldset>
+            <fieldset>
+              <legend>Business Decription</legend>
+              <label for="description">
+                  <textarea id="description" name="description" placeholder="Write here" rows="5"></textarea>
+              </label>
+           </fieldset>
+
+              <small></small>(<strong>*</strong>) Required field</small>
+              <input type="hidden" name="hiddendate" id="today">
+            <!-- Submit -->
+            <input type="submit" value="Apply for a Membership" />
+          </form>
+        </section>
+        <section id="membership-levels">
+          <h3>Membership Levels</h3>
+        </section>
+
+        <dialog id="levelModal"></dialog>
+      </main>
       <footer>
         <section class="address-info">
           <p><b>Cordoba Chamber of Commerce</b></p>
