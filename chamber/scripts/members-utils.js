@@ -1,3 +1,9 @@
+export function capitalize(phrase) {
+  return phrase
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
 
 export function createCardTemplate(member) {
   const card = document.createElement("section");
@@ -20,10 +26,11 @@ export function createCardTemplate(member) {
   website.textContent = "Website";
 
   const membershipLevel = document.createElement("li");
-  const membership = {
-    2: "Silver",
-    3: "Gold",
-  }[member.membershipLevel] || "Member";
+  const membership =
+    {
+      2: "Silver",
+      3: "Gold",
+    }[member.membershipLevel] || "Bronze";
   membershipLevel.innerHTML = `<b>Level</b> <br> ${membership}`;
   membershipLevel.setAttribute("class", "membership");
   ul.appendChild(membershipLevel);
@@ -35,14 +42,13 @@ export function createCardTemplate(member) {
   card.appendChild(website);
   card.appendChild(ul);
 
-  return card; 
+  return card;
 }
 
 export async function getMembersData(URL) {
   try {
     const response = await fetch(URL);
     const data = await response.json();
-    console.log(data);
     return data;
   } catch (error) {
     console.error("Error fetching members:", error);

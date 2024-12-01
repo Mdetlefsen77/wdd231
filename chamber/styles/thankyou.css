@@ -1,0 +1,82 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Main Container */
+main {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+/* Thank You Text */
+main .thanks {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Results Section */
+#results {
+  padding: 1.5rem;
+  background-color: #f8fafc;
+  border: 2px solid #d9e9f8;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Results Content */
+#results p {
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+#results p strong {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Improve Responsiveness */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  main h2 {
+    font-size: 1.75rem;
+  }
+
+  main .thanks {
+    font-size: 1rem;
+  }
+
+  #results {
+    padding: 1rem;
+  }
+
+  #results p {
+    font-size: 0.9rem;
+  }
+}
