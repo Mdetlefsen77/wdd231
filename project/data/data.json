@@ -1,0 +1,37 @@
+{
+  "featuredStories": [
+    {
+      "image": "images/featured-beaches.webp",
+      "title": "Top 5 Beaches for a Perfect Vacation",
+      "description": "Discover the most serene and picturesque beaches around the globe."
+    },
+    {
+      "image": "images/featured-expedition.webp",
+      "title": "Adventurer's Paradise",
+      "description": "Experience thrilling treks and mountain expeditions."
+    },
+    {
+      "image": "images/featured-budget.webp",
+      "title": "Travel on a Budget",
+      "description": "Learn how to explore the world without breaking the bank."
+    }
+  ],
+  "categories": [
+    {
+      "image": "images/adventure.webp",
+      "title": "Adventure"
+    },
+    {
+      "image": "images/honeymoon.webp",
+      "title": "Honeymoon"
+    },
+    {
+      "image": "images/budget.webp",
+      "title": "Budget Travel"
+    },
+    {
+      "image": "images/culture.webp",
+      "title": "Culture"
+    }
+  ]
+}

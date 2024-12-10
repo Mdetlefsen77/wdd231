@@ -1,0 +1,22 @@
+{
+    "team": [
+        {
+            "name": "Jane Doe",
+            "role": "Editor-in-Chief",
+            "image": "images/jane.webp",
+            "description": "Jane has been exploring the world for over a decade and loves sharing travel insights."
+        },
+        {
+            "name": "John Smith",
+            "role": "Photographer",
+            "image": "images/john.webp",
+            "description": "John captures the beauty of destinations with his exceptional photography skills."
+        },
+        {
+            "name": "Emily Davis",
+            "role": "Travel Writer",
+            "image": "images/emily.webp",
+            "description": "Emily writes captivating stories that inspire readers to pack their bags and go!"
+        }
+    ]
+}
