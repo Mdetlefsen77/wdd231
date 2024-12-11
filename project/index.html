@@ -13,11 +13,14 @@
         <title>Travel Blog - Main</title>
         <link rel="icon" href="./favicon.ico">
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/styles-large.css">
+        <link rel="stylesheet" href="styles/styles-short.css">
         <link rel="stylesheet" href="styles/normalize.css">
-        <script src="scripts/main.js" defer></script>
+        <script src="scripts/index.js" defer></script>
         <script src="scripts/footerDetails.js" defer></script>
         <script src="scripts/hamButton.js" defer></script>
         <script src="scripts/activePage.js" defer></script>
+        <script src="scripts/weatherApi.js" defer></script>
     </head>
     <body>
         <header>
@@ -37,14 +40,19 @@
                     <a href="index.html" class="active">Home</a>
                     <a href="about.html">About</a>
                     <a href="tips.html">Tips</a>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="contact.html" class="highlight">Share your tip</a>
                 </div>
             </nav>
         </header>
         <main>
             <section class="hero">
                 <div class="hero-overlay"></div>
-                <img src="images/banner.webp" alt="Scenic view of a mountain" class="hero-img" loading="lazy">
+                <img
+                    src="images/banner.webp"
+                    alt="Scenic view of a mountain"
+                    class="hero-img"
+                    loading="lazy"
+                >
                 <div class="hero-text">
                     <h1>Discover Your Next Adventure</h1>
                     <p>Explore the best travel destinations, tips, and stories for every budget and occasion.</p>
@@ -57,10 +65,27 @@
                 <h2>Featured Stories</h2>
                 <div class="feature-grid"></div>
             </section>
-            <section class="categories">
-                <h2>Categories</h2>
-                <div class="category-grid"></div>
-            </section>
+            <div class="events-weather">
+                <div>
+                    <h3>Current Weather</h3>
+                    <div id="current-weather">
+                        <p>No data available</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Weather Cast</h3>
+                    <div id="weather-cast">
+                        <p>No data available</p>
+                    </div>
+                </div>
+                <section class="categories">
+                    <h2>Categories</h2>
+                    <div class="category-grid"></div>
+                    <a href="contact.html">
+                        <button class="cta-button-categories">Share yout tip!</button>
+                    </a>
+                </section>
+            </div>
         </main>
         <footer>
             <div class="footer-section">
@@ -104,15 +129,21 @@
                     <p>
                         &copy;
                         <span id="currentyear"></span>
-                        Travel Tales Blog
+                        Website design and content by
+                        <strong>Travel Tales Blog - Martin Detlefsen</strong>
+                        .
                     </p>
-                    <p>WDD231 Class Project</p>
-                    <p>Martin Detlefsen</p>
                     <p>
-                        Last Modified
-                        <span id="lastModified"></span>
+                        Attribution: 
+                        Photos by:
+                        <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>
+                        Icons by
+                        <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">Flaticon</a>
+                        .
                     </p>
-                    <a href="attributions.html">Attributions</a>
+                    <p>
+                        Developed with ❤️ and JavaScript.
+                    </p>
                 </div>
             </div>
         </footer>

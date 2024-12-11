@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const dataUrl = "./data/data.json";
-
   const featureGrid = document.querySelector(".feature-grid");
   const categoryGrid = document.querySelector(".category-grid");
-
   const createFeaturedStory = (story) => {
     const article = document.createElement("article");
-
     const img = document.createElement("img");
     img.src = story.image;
     img.alt = story.title;
@@ -14,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const h3 = document.createElement("h3");
     h3.textContent = story.title;
-
     const p = document.createElement("p");
     p.textContent = story.description;
 
@@ -27,15 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const createCategory = (category) => {
     const div = document.createElement("div");
     div.classList.add("category");
-
     const img = document.createElement("img");
     img.src = category.image;
     img.alt = category.title;
     img.loading = "lazy";
-
     const h3 = document.createElement("h3");
     h3.textContent = category.title;
-
     div.appendChild(img);
     div.appendChild(h3);
     return div;
