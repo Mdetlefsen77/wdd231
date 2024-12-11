@@ -1,0 +1,31 @@
+[
+    {
+        "category": "Budget Travel",
+        "icon": "images/budget-icon.webp",
+        "title": "Save Money on Flights",
+        "description": "Use fare comparison tools and book flights during off-peak seasons.",
+        "largeDescription": "Saving money on flights requires a combination of tools and timing. Use flight comparison websites like Skyscanner or Google Flights to monitor prices. Booking during off-peak seasons or mid-week often results in cheaper fares. Additionally, consider budget airlines or nearby airports for more savings."
+    },
+    {
+        "category": "Culture",
+        "icon": "images/packing-icon.webp",
+        "title": "Pack Smart",
+        "description": "Roll your clothes to save space and avoid overpacking.",
+        "largeDescription": "Packing efficiently can make your travels more enjoyable. Rolling your clothes not only saves space but also minimizes wrinkles. Use packing cubes to keep your items organized. Always check the weather at your destination and pack versatile clothing that can be layered. Don’t forget essentials like a universal charger, toiletries, and a first aid kit."
+    },
+    {
+        "category": "HoneyMoon",
+        "icon": "images/safety-icon.webp",
+        "title": "Stay Safe Abroad",
+        "description": "Keep a copy of your passport and important documents online.",
+        "largeDescription": "Travel safety is essential. Store digital copies of your passport, visa, and other important documents in a secure cloud storage service like Google Drive or Dropbox. Share your itinerary with a trusted friend or family member. Avoid displaying valuables openly and stay aware of your surroundings in crowded places."
+    },
+    {
+        "category": "Adventure",
+        "icon": "images/destination-icon.webp",
+        "title": "Research Your Destination",
+        "description": "Learn about local customs, weather, and transportation options.",
+        "largeDescription": "Before traveling, research your destination thoroughly. Understand the local customs and cultural norms to avoid unintentional offenses. Check the weather forecast and pack accordingly. Familiarize yourself with the transportation options available, including public transport, taxis, or ridesharing services. This preparation ensures a smoother trip."
+    }
+]
+

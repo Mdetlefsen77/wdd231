@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #3498db;
+  --accent-color: #f39c12;
+  --background-color: #f5f5dc;
+  --text-color: #333;
+  --white-color: #ffffff;
+
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Merriweather", serif;
+
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --padding: 1rem;
+  --max-width: 800px;
+
+  --border-width: 5px;
+  --wireframe-border-radius: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+
+  .hero {
+    position: relative;
+  }
+  .hero-text {
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-color);
+    opacity: 0.6;
+    z-index: 1;
+    border-radius: var(--border-radius);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 400px 0 400px;
+    padding: var(--padding);
+    background-color: var(--white-color);
+  }
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--padding);
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .menu {
+    display: flex;
+    gap: var(--padding);
+  }
+
+  header #menu {
+    display: none;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+  .feature-grid article {
+    flex: 0 0 30%;
+  }
+
+  .about-hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .about-hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .about-content h2,
+  .team h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-member h3 {
+    font-size: 1.4rem;
+  }
+  .tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--padding);
+    padding: var(--padding);
+  }
+}
