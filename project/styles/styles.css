@@ -495,9 +495,11 @@ footer .footer-section {
   height: 150px;
   margin-bottom: var(--padding);
 }
+
+/* Contact section  */
 .contact-container {
   background-color: var(--background-color);
-  margin: 50px 600px 50px 600px;
+  margin: 50px 400px 50px 400px;
 }
 .contact {
   background-color: var(--white-color);
@@ -574,7 +576,7 @@ form button:hover {
 
 .thank-container {
   background-color: var(--background-color);
-  margin: 50px 600px 50px 600px;
+  margin: 50px 400px 50px 400px;
 }
 
 .thank-you-section {

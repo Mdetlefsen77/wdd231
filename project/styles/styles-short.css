@@ -117,7 +117,31 @@
     max-width: 400px;
     margin: 0 auto;
   }
+  .thank-container {
+    background-color: var(--background-color);
+    margin: 2rem auto;
+  }
+  .thank-you-section {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
+  .thank-you-section h2 {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+  }
+
+  .thank-you-section p {
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    color: var(--text-color);
+  }
   .events-weather {
     display: flex;
     flex-direction: column;
