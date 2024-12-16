@@ -51,7 +51,7 @@
   main {
     display: flex;
     flex-direction: column;
-    margin: 0 400px 0 400px;
+    margin: 50px 200px 50px 200px;
     padding: var(--padding);
     background-color: var(--white-color);
   }
@@ -127,5 +127,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--padding);
     padding: var(--padding);
+  }
+  .thank-container {
+    background-color: var(--background-color);
+    margin: 50px 400px 50px 400px;
   }
 }
